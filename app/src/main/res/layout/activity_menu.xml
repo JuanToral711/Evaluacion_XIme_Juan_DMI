@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#0F7BFF"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/id_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="78dp"
+        android:backgroundTint="#5CBEFF"
+        android:text="Selecciona Algun Apartado:"
+        android:textAlignment="center"
+        android:textColor="@color/azulado"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_info"
+        android:layout_width="305dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="493dp"
+        android:backgroundTint="#577BFF"
+        android:text="Información Alumnos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_text1" />
+
+    <Button
+        android:id="@+id/btn_apiy"
+        android:layout_width="305dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF2727"
+        android:text="Api YouTube"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_info" />
+
+    <Button
+        android:id="@+id/btn_cerrars"
+        style="@style/FirebaseUI.Button"
+        android:layout_width="200dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#FF3D00"
+        android:text="Cerrar Sesion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_apiy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
